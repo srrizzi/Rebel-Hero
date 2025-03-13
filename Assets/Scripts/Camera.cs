@@ -17,7 +17,7 @@ public class Camera : MonoBehaviour
     [SerializeField]
     private Vector2 offset;
 
-    void Update()
+    void LateUpdate()
     {
         Vector3 finalPosition = this.player.position + (Vector3)this.offset;
         finalPosition.z = this.transform.position.z;
@@ -27,13 +27,13 @@ public class Camera : MonoBehaviour
             finalPosition.x = this.transform.position.x;
         }
 
-        if (!this.moveY)
+        if (!moveY)
         {
-            finalPosition.y = this.transform.position.y;
+            finalPosition.y = transform.position.y;
         }
 
-        finalPosition = Vector3.Lerp(this.transform.position, finalPosition, this.moveSpeed * Time.deltaTime);
+        finalPosition = Vector3.Lerp(transform.position, finalPosition, moveSpeed * Time.deltaTime);
 
-        this.transform.position = finalPosition;
+        transform.position = finalPosition;
     }
 }
