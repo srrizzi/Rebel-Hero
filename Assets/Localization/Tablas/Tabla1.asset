@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: Tabla1
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: f914b80e56e07e948a9f33e99849d136, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: d99ceca153fea8746b055ee531855d8c, type: 2}
+  - {fileID: 11400000, guid: 9c680fbb045d5144aa898a454eedf590, type: 2}
+  m_Extensions:
+  - rid: 5302294187021959456
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds:
+    - rid: 5302294187021959456
+      type: {class: CsvExtension, ns: UnityEditor.Localization.Plugins.CSV, asm: Unity.Localization.Editor}
+      data:
+        m_Collection: {fileID: 11400000}
+        m_ColumnsList:
+        - rid: 5302294187021959457
+        - rid: 5302294187021959458
+        - rid: 5302294187021959459
+        m_ConnectedFile: 
+    - rid: 5302294187021959457
+      type: {class: KeyIdColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_IncludeId: 1
+        m_IncludeSharedComments: 1
+        m_KeyFieldName: Key
+        m_IdFieldName: Id
+        m_CommentFieldName: Shared Comments
+    - rid: 5302294187021959458
+      type: {class: LocaleColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_LocaleIdentifier:
+          m_Code: en-US
+        m_FieldName: English (United States)(en-US)
+        m_CommentFieldName: English (United States)(en-US) Comments
+        m_IncludeComments: 1
+    - rid: 5302294187021959459
+      type: {class: LocaleColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_LocaleIdentifier:
+          m_Code: pt-BR
+        m_FieldName: Portuguese (Brazil)(pt-BR)
+        m_CommentFieldName: Portuguese (Brazil)(pt-BR) Comments
+        m_IncludeComments: 1

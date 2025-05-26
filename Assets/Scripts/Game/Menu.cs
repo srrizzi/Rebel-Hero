@@ -24,8 +24,12 @@ public class Menu : MonoBehaviour
         panelMenu.SetActive(true);
     }
 
-    public void Exit ()
-    {
-        Application.Quit();
-    }
+  public void Exit()
+  {
+#if UNITY_EDITOR
+    UnityEditor.EditorApplication.isPlaying = false;
+#else
+      Application.Quit();
+#endif
+  }
 }

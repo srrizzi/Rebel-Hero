@@ -20,6 +20,10 @@ public class IAEnemyShadow : MonoBehaviour
 
   void Update()
   {
+    // Check if player reference is valid before accessing it
+    if (player == null)
+      return;
+
     float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
     if (distanceToPlayer < detectionRange && IsWithinPatrolLimits(player.position))

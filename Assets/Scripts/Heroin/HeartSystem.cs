@@ -45,7 +45,12 @@ public class HeartSystem : MonoBehaviour
       heroin.anim.SetBool("isDead", isDead);
       GetComponent<Heroin>().enabled = false;
       Destroy(gameObject, 0.8f);
-      SceneManager.LoadScene("InicialGame");
+      SceneManager.LoadScene("MainMenu");
     }
+  }
+  public void TakeDamage(int amount = 1)
+  {
+    Life -= amount;
+    if (Life < 0) Life = 0;
   }
 }

@@ -18,7 +18,7 @@ public class TriggerDamage : MonoBehaviour
       {
         heroin.isKnockRight = false;
       }
-      heart.Life -= 1;
+      heart.Life--;
       heroin.anim.SetTrigger("TakeDamage");
     }
   }

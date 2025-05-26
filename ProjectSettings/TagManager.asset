@@ -4,7 +4,9 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - MortalTile
+  - PowerUp
+  - Stone
+  - Dead
   layers:
   - Default
   - TransparentFX

@@ -1,6 +1,3 @@
-using System;
-using Unity.VisualScripting;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class Heroin : MonoBehaviour
@@ -9,22 +6,26 @@ public class Heroin : MonoBehaviour
   public Rigidbody2D rigidbody2D;
   public SpriteRenderer spriteRenderer;
   public float radiusDetected;
-  private bool jumping;
   public MoveDiretion moveDiretion;
 
-  [SerializeField] private Transform cameraTarget;
-  [SerializeField] private float cameraSpeed;
+  DialogueSystem dialogueSystem;
+
+  [SerializeField] private Transform npc;
+
   [SerializeField] public Animator anim;
 
   [SerializeField] private Transform detectedGround;
   [SerializeField] private float groundDist;
   [SerializeField] private LayerMask layerGround;
 
-  private bool canJump;
+  [SerializeField]
+  private HeartSystem heartSystem;
+
   private bool isGroundCheck;
 
   [SerializeField] private float moveSpeed;
   [SerializeField] private float jumpForce;
+  [SerializeField] private DoubleJump doubleJump;
 
   private float inputDirection;
   private bool isDirectingRight = true;
@@ -35,7 +36,13 @@ public class Heroin : MonoBehaviour
   public float kBTime;
 
   public bool isKnockRight;
+  private bool canDoubleJump = false;
   #endregion
+
+  private void Awake()
+  {
+    dialogueSystem = Object.FindFirstObjectByType<DialogueSystem>();
+  }
 
   private void Start()
   {
@@ -99,6 +106,14 @@ public class Heroin : MonoBehaviour
     {
       Flip();
     }
+
+    if (Mathf.Abs(transform.position.x - npc.position.x) < 2.0f)
+    {
+      if (Input.GetKeyDown(KeyCode.E))
+      {
+        dialogueSystem.Next();
+      }
+    }
   }
 
   void Flip()
@@ -117,28 +132,22 @@ public class Heroin : MonoBehaviour
     anim.SetFloat("HorizontalAnim", rigidbody2D.linearVelocityX);
   }
 
-  private void Jump()
+  public void Jump()
   {
-    Collider2D collider = Physics2D.OverlapCircle(detectedGround.position, radiusDetected, layerGround);
-    if (collider != null)
-    {
-      isGroundCheck = true;
-      jumping = false;
-    }
-    else
-    {
-      isGroundCheck = false;
-    }
+    bool powerDoubleJump = doubleJump.isDoubleJump; 
 
     if (isGroundCheck)
     {
-      if (Input.GetKeyDown(KeyCode.Space))
+      ApplyForceJump();
+      if (powerDoubleJump)
       {
-        if (!jumping)
-        {
-          ApplyForceJump();
-        }
+        canDoubleJump = true;  
       }
+    }
+    else if (canDoubleJump)
+    {
+      ApplyForceJump();
+      canDoubleJump = false; 
     }
   }
 
@@ -146,7 +155,6 @@ public class Heroin : MonoBehaviour
   {
     anim.SetFloat("VerticalAnim", rigidbody2D.linearVelocityY);
     anim.SetBool("groundCheck", isGroundCheck);
-
   }
 
   public void ApplyForceJump()
@@ -159,5 +167,4 @@ public class Heroin : MonoBehaviour
   {
     Gizmos.DrawWireSphere(detectedGround.position, groundDist);
   }
-
 }

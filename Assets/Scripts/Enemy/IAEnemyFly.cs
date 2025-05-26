@@ -18,6 +18,9 @@ public class IAEnemyFly : MonoBehaviour
 
   void Update()
   {
+    if (player == null)
+      return;
+
     float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
     if (distanceToPlayer < detectionRange)
