@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: DiologueData
   m_EditorClassIdentifier: 
   talkScript:
-  - name: "Velha S\xE1bia"
-    text: "Ah\u2026 voc\xEA finalmente despertou, jovem rebelde\u2026"
-  - name: "Velha S\xE1bia"
-    text: "Seu caminho \xE0 frente \xE9 trai\xE7oeiro, mas os ventos sussurram o
-      seu nome entre as \xE1rvores."
-  - name: "Velha S\xE1bia"
+  - name: Velha Sabia
+    text: "Ah\u2026 voce finalmente despertou, jovem rebelde\u2026"
+  - name: Velha Sabia
+    text: Seu caminho a frente e traicoeiro, mas os ventos sussurram o seu nome entre
+      as arvores.
+  - name: Velha Sabia
     text: "Siga\u2026 explore cada canto deste mundo esquecido."
-  - name: "Velha S\xE1bia"
-    text: "Apenas dominando novas habilidades ser\xE1 capaz de romper os selos que
-      bloqueiam seu destino."
-  - name: "Velha S\xE1bia"
-    text: "Que os esp\xEDritos da floresta guiem seus passos\u2026 e que a sorte
-      esteja contigo, hero\xEDna."
+  - name: Velha Sabia
+    text: Apenas dominando novas habilidades sera capaz de romper os selos que bloqueiam
+      seu destino.
+  - name: Velha Sabia
+    text: "Que os espiritos da floresta guiem seus passos\u2026 e que a sorte esteja
+      contigo, heroina."

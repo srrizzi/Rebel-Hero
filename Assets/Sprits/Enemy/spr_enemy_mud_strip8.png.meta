@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 62ee1b0ddd58fea4a9597d775a16cd1e
+guid: 70fa9819dc511f042ac5b6a91133b8a7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6099076300548399706
-    second: rum IMIGO_SHADOW_01-Sheet_0
+      213: 4654752230808865768
+    second: spr_enemy_mud_strip8_0
   - first:
-      213: 1227499044274668667
-    second: rum IMIGO_SHADOW_01-Sheet_1
+      213: 3838639233763166747
+    second: spr_enemy_mud_strip8_1
   - first:
-      213: -143556327026765697
-    second: rum IMIGO_SHADOW_01-Sheet_2
+      213: 1199987830920113235
+    second: spr_enemy_mud_strip8_2
   - first:
-      213: -232445160536786821
-    second: rum IMIGO_SHADOW_01-Sheet_3
+      213: 5604967759666848303
+    second: spr_enemy_mud_strip8_3
   - first:
-      213: -411702296748412543
-    second: rum IMIGO_SHADOW_01-Sheet_4
+      213: -1951151154280594261
+    second: spr_enemy_mud_strip8_4
   - first:
-      213: -6483642278411729704
-    second: rum IMIGO_SHADOW_01-Sheet_5
+      213: -7034577283839300845
+    second: spr_enemy_mud_strip8_5
   - first:
-      213: -4825031183238486487
-    second: rum IMIGO_SHADOW_01-Sheet_6
+      213: -5759283212567099358
+    second: spr_enemy_mud_strip8_6
   - first:
-      213: -7777336665156962718
-    second: rum IMIGO_SHADOW_01-Sheet_7
+      213: 2784867869810967964
+    second: spr_enemy_mud_strip8_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 62
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -160,177 +160,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rum IMIGO_SHADOW_01-Sheet_0
+      name: spr_enemy_mud_strip8_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 46
-        height: 46
+        width: 62
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6ad1fcf3b6abb5ba0800000000000000
-      internalID: -6099076300548399706
+      spriteID: b844f46d473050849b54395c673b954b
+      internalID: -719477576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rum IMIGO_SHADOW_01-Sheet_1
+      name: spr_enemy_mud_strip8_1
       rect:
         serializedVersion: 2
-        x: 46
+        x: 62
         y: 0
-        width: 46
-        height: 46
+        width: 62
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b748f1090e3f80110800000000000000
-      internalID: 1227499044274668667
+      spriteID: 10deecdbdd1dc1d42ad900ba6a34000d
+      internalID: 219423148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rum IMIGO_SHADOW_01-Sheet_2
+      name: spr_enemy_mud_strip8_2
       rect:
         serializedVersion: 2
-        x: 92
+        x: 124
         y: 0
-        width: 46
-        height: 46
+        width: 62
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f705f4af74cf10ef0800000000000000
-      internalID: -143556327026765697
+      spriteID: 58308e880412b604c9fc4ef3b44b25dd
+      internalID: 59287574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rum IMIGO_SHADOW_01-Sheet_3
+      name: spr_enemy_mud_strip8_3
       rect:
         serializedVersion: 2
-        x: 138
+        x: 186
         y: 0
-        width: 46
-        height: 46
+        width: 62
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b783278ab5036ccf0800000000000000
-      internalID: -232445160536786821
+      spriteID: b08089f7f16450b488ec481f14685efa
+      internalID: -2049978567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rum IMIGO_SHADOW_01-Sheet_4
+      name: spr_enemy_mud_strip8_4
       rect:
         serializedVersion: 2
-        x: 184
+        x: 248
         y: 0
-        width: 46
-        height: 46
+        width: 62
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 181391141f6594af0800000000000000
-      internalID: -411702296748412543
+      spriteID: 8e239ae507eeef54fb187a8caa41235d
+      internalID: -535890031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rum IMIGO_SHADOW_01-Sheet_5
+      name: spr_enemy_mud_strip8_5
       rect:
         serializedVersion: 2
-        x: 230
+        x: 310
         y: 0
-        width: 46
-        height: 46
+        width: 62
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8d4809813b97506a0800000000000000
-      internalID: -6483642278411729704
+      spriteID: 8c2036d90b19ce14991653f9b485ebdc
+      internalID: -1551212442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rum IMIGO_SHADOW_01-Sheet_6
+      name: spr_enemy_mud_strip8_6
       rect:
         serializedVersion: 2
-        x: 276
+        x: 372
         y: 0
-        width: 46
-        height: 46
+        width: 62
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 92623e4f3bb0a0db0800000000000000
-      internalID: -4825031183238486487
+      spriteID: 8c074a879c7765b46b070287d66ce782
+      internalID: -591330190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rum IMIGO_SHADOW_01-Sheet_7
+      name: spr_enemy_mud_strip8_7
       rect:
         serializedVersion: 2
-        x: 322
+        x: 434
         y: 0
-        width: 46
-        height: 46
+        width: 62
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 266b2b65289511490800000000000000
-      internalID: -7777336665156962718
+      spriteID: b2f81728e0610d646ab9803ca6fb67dc
+      internalID: 955989861
       vertices: []
       indices: 
       edges: []
@@ -339,7 +339,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 42267d32c11547d4c8a28f39e038dbd3
+    spriteID: bf1999343c753804287a4c86e1a9c90c
     internalID: 0
     vertices: []
     indices: 
@@ -349,14 +349,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      rum IMIGO_SHADOW_01-Sheet_0: -6099076300548399706
-      rum IMIGO_SHADOW_01-Sheet_1: 1227499044274668667
-      rum IMIGO_SHADOW_01-Sheet_2: -143556327026765697
-      rum IMIGO_SHADOW_01-Sheet_3: -232445160536786821
-      rum IMIGO_SHADOW_01-Sheet_4: -411702296748412543
-      rum IMIGO_SHADOW_01-Sheet_5: -6483642278411729704
-      rum IMIGO_SHADOW_01-Sheet_6: -4825031183238486487
-      rum IMIGO_SHADOW_01-Sheet_7: -7777336665156962718
+      spr_enemy_mud_strip8_0: -719477576
+      spr_enemy_mud_strip8_1: 219423148
+      spr_enemy_mud_strip8_2: 59287574
+      spr_enemy_mud_strip8_3: -2049978567
+      spr_enemy_mud_strip8_4: -535890031
+      spr_enemy_mud_strip8_5: -1551212442
+      spr_enemy_mud_strip8_6: -591330190
+      spr_enemy_mud_strip8_7: 955989861
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
