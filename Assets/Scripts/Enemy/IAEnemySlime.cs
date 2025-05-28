@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class IAEnemyShadow : MonoBehaviour
+public class IAEnemySlime : MonoBehaviour
 {
   public Transform player;
   public float detectionRange = 5f;
