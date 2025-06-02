@@ -109,9 +109,11 @@ public class Heroin : MonoBehaviour
 
     if (Mathf.Abs(transform.position.x - npc.position.x) < 2.0f)
     {
+      if(Mathf.Abs(transform.position.x - npc.position.x) > 2.0f) return;
+
       if (Input.GetKeyDown(KeyCode.E))
       {
-        dialogueSystem.Next();
+        dialogueSystem.Next(); 
       }
     }
   }

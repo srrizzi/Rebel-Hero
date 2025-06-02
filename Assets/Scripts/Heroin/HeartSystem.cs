@@ -13,6 +13,8 @@ public class HeartSystem : MonoBehaviour
   public Sprite amptyHeart;
   public Sprite fullHeart;
 
+  public GameManager gameOverUI;
+
   // Start is called once before the first execution of Update after the MonoBehaviour is created
   void Start()
   {
@@ -43,9 +45,10 @@ public class HeartSystem : MonoBehaviour
     {
       isDead = true;
       heroin.anim.SetBool("isDead", isDead);
+      //if(isDead) heroin.anim.SetBool("isDead", false);
       GetComponent<Heroin>().enabled = false;
-      Destroy(gameObject, 0.8f);
-      SceneManager.LoadScene("MainMenu");
+      Destroy(gameObject, 1.2f);
+      gameOverUI.gameOver();
     }
   }
   public void TakeDamage(int amount = 1)

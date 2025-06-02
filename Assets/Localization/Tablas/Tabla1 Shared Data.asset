@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TableCollectionName: Tabla1
   m_TableCollectionNameGuidString: f914b80e56e07e948a9f33e99849d136
-  m_Entries: []
+  m_Entries:
+  - m_Id: 2965732605919232
+    m_Key: ButtonPlay
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

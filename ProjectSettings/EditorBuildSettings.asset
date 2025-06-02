@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PhaseLast.unity
     guid: 93e48026974810941a0d470f6d394c86
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: e9602e77255da534fb516fa9c66fc2d8
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 90060a36511f32047bf9cd36299540cc, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

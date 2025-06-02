@@ -1,5 +1,9 @@
+using System;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
@@ -9,6 +13,7 @@ public class Menu : MonoBehaviour
   [SerializeField] private GameObject panelTutorial;
   [SerializeField] private GameObject panelAbout;
   [SerializeField] private GameObject panelOption;
+  [SerializeField] private GameObject panelButtons;
 
   public void ButtonStart()
   {
@@ -31,12 +36,14 @@ public class Menu : MonoBehaviour
   {
     panelMenu.SetActive(false);
     panelAbout.SetActive(true);
+    panelButtons.SetActive(false);
   }
 
   public void CloseAbout()
   {
     panelAbout.SetActive(false);
     panelMenu.SetActive(true);
+    panelButtons.SetActive(true);
   }
 
   public void OpenOption()
@@ -53,7 +60,7 @@ public class Menu : MonoBehaviour
 
   public void ButtonCredits()
   {
-    SceneManager.LoadScene(sceneCredits);
+    SceneManager.LoadScene("Credits");
   }
 
   public void Exit()
