@@ -11,9 +11,18 @@ public class IAEnemyFly : MonoBehaviour
   private Vector2 initialPosition;
   private bool movingRight = true;
 
+  //AudioManager audioManager;
+
+  //private void Awake()
+  //{
+  //  audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+  //}
+
   void Start()
   {
+
     initialPosition = transform.position;
+
   }
 
   void Update()

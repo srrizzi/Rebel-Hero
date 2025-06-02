@@ -7,6 +7,7 @@ TagManager:
   - PowerUp
   - Stone
   - Dead
+  - Audio
   layers:
   - Default
   - TransparentFX

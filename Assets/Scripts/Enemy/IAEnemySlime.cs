@@ -12,6 +12,13 @@ public class IAEnemySlime : MonoBehaviour
   private bool movingRight = true;
   private Rigidbody2D rb;
 
+  //AudioManager audioManager;
+
+  //private void Awake()
+  //{
+  //  audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+  //}
+
   void Start()
   {
     initialPosition = transform.position;
@@ -20,6 +27,7 @@ public class IAEnemySlime : MonoBehaviour
 
   void Update()
   {
+
     // Check if player reference is valid before accessing it
     if (player == null)
       return;
@@ -31,6 +39,7 @@ public class IAEnemySlime : MonoBehaviour
       // Persegue o jogador no eixo X
       Vector2 direction = new Vector2(player.position.x - transform.position.x, 0).normalized;
       transform.position += (Vector3)(direction * moveSpeed * Time.deltaTime);
+
     }
     else
     {

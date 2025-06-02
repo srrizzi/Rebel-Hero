@@ -9,6 +9,13 @@ public class IAEnemyShadow : MonoBehaviour
   private bool movingRight = true;
   private SpriteRenderer spriteRenderer;
 
+  //AudioManager audioManager;
+
+  //private void Awake()
+  //{
+  //  audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+  //}
+
   void Start()
   {
     initialPosition = transform.position;
