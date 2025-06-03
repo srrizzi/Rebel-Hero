@@ -14,6 +14,12 @@ public class HeartSystem : MonoBehaviour
   public Sprite fullHeart;
 
   public GameManager gameOverUI;
+  AudioManager audioManager;
+
+  private void Awake()
+  {
+    audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+  }
 
   // Start is called once before the first execution of Update after the MonoBehaviour is created
   void Start()
@@ -45,7 +51,8 @@ public class HeartSystem : MonoBehaviour
     {
       isDead = true;
       heroin.anim.SetBool("isDead", isDead);
-      //if(isDead) heroin.anim.SetBool("isDead", false);
+      ////if(isDead) heroin.anim.SetBool("isDead", false);
+      //audioManager.PlaySFX(audioManager.dead);
       GetComponent<Heroin>().enabled = false;
       Destroy(gameObject, 1.2f);
       gameOverUI.gameOver();

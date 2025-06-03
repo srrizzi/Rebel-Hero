@@ -9,6 +9,12 @@ public class HeroinAttack : MonoBehaviour
   [SerializeField] private LayerMask layerAttack;
   [SerializeField] private Heroin heroin;
   [SerializeField] private AttackDestroy powerUp;
+  AudioManager audioManager;
+
+  private void Awake()
+  {
+    audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+  }
 
   // Start is called once before the first execution of Update after the MonoBehaviour is created
   void Start()
@@ -32,12 +38,13 @@ public class HeroinAttack : MonoBehaviour
     if (heroin.moveDiretion == MoveDiretion.Right)
     {
       attackPoint = attackPointRight;
-
     }
     else
     {
       attackPoint = attackPointLeft;
     }
+
+    audioManager.PlaySFX(audioManager.attack);
 
     bool power = powerUp.isPowerUp;
 

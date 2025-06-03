@@ -8,6 +8,10 @@ TagManager:
   - Stone
   - Dead
   - Audio
+  - Slime
+  - Fly
+  - Shadow
+  - Hand
   layers:
   - Default
   - TransparentFX

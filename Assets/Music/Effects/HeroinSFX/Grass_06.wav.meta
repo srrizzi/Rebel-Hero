@@ -1,8 +1,15 @@
 fileFormatVersion: 2
 guid: 3b2a4436a10007185b020229d9a33c28
+AssetOrigin:
+  serializedVersion: 1
+  productId: 291913
+  packageName: FREE SOUND COLLECTION
+  packageVersion: 1.0
+  assetPath: Assets/FREE SOUND PACK_TM(355)/Footsteps(15)/Grass_06.wav
+  uploadId: 681677
 AudioImporter:
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 8
   defaultSettings:
     serializedVersion: 2
     loadType: 0
@@ -21,10 +28,3 @@ AudioImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 291913
-  packageName: FREE SOUND COLLECTION
-  packageVersion: 1.0
-  assetPath: Assets/FREE SOUND PACK_TM(355)/Footsteps(15)/Grass_06.wav
-  uploadId: 681677

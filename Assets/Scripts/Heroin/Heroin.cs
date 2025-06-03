@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Heroin : MonoBehaviour
 {
@@ -29,7 +30,7 @@ public class Heroin : MonoBehaviour
 
   private float inputDirection;
   private bool isDirectingRight = true;
-  private Rigidbody2D rigidbody2d; 
+  private Rigidbody2D rigidbody2d;
 
   public float kBForce;
   public float kBCount;
@@ -37,11 +38,16 @@ public class Heroin : MonoBehaviour
 
   public bool isKnockRight;
   private bool canDoubleJump = false;
+
+  AudioManager audioManager;
+  private float lastFootstepTime = 0f;
+  [SerializeField] private float footstepCooldown = 0.25f; // Adjust for more natural interval
   #endregion
 
   private void Awake()
   {
     dialogueSystem = Object.FindFirstObjectByType<DialogueSystem>();
+    audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
   }
 
   private void Start()
@@ -65,17 +71,17 @@ public class Heroin : MonoBehaviour
 
   void KnockLogic()
   {
-    if(kBCount < 0)
+    if (kBCount < 0)
     {
       MoveLogic();
     }
     else
     {
-      if(isKnockRight)
+      if (isKnockRight)
       {
         rigidbody2d.linearVelocity = new Vector2(-kBForce, kBForce);
       }
-      if(!isKnockRight)
+      if (!isKnockRight)
       {
         rigidbody2d.linearVelocity = new Vector2(kBForce, kBForce);
       }
@@ -92,13 +98,13 @@ public class Heroin : MonoBehaviour
     inputDirection = Input.GetAxisRaw("Horizontal");
 
     if (Input.GetButtonDown("Jump")) Jump();
-    
+
   }
 
 
   void DirectionCheck()
-  { 
-    if(isDirectingRight && inputDirection < 0)
+  {
+    if (isDirectingRight && inputDirection < 0)
     {
       Flip();
     }
@@ -109,11 +115,12 @@ public class Heroin : MonoBehaviour
 
     if (Mathf.Abs(transform.position.x - npc.position.x) < 2.0f)
     {
-      if(Mathf.Abs(transform.position.x - npc.position.x) > 2.0f) return;
+      if (Mathf.Abs(transform.position.x - npc.position.x) > 2.0f) return;
 
       if (Input.GetKeyDown(KeyCode.E))
       {
-        dialogueSystem.Next(); 
+        audioManager.PlaySFX(audioManager.npcTalk);
+        dialogueSystem.Next();
       }
     }
   }
@@ -127,6 +134,40 @@ public class Heroin : MonoBehaviour
   void MoveLogic()
   {
     rigidbody2d.linearVelocity = new Vector2(inputDirection * moveSpeed, rigidbody2d.linearVelocityY);
+
+    // Play footsteps SFX every time the character moves and depending on the scene
+    // Add this field to the Heroin class
+
+    // Replace the selected code in MoveLogic() with the following:
+    if (Mathf.Abs(inputDirection) > 0.01f && isGroundCheck)
+    {
+      string sceneName = SceneManager.GetActiveScene().name;
+      AudioClip footstepClip = null;
+
+      if (sceneName == "Forest")
+      {
+        footstepClip = audioManager.footstepsForest;
+      }
+      else if (sceneName == "Cave")
+      {
+        footstepClip = audioManager.footstepsCave;
+      }
+      else if (sceneName == "Boss")
+      {
+        footstepClip = audioManager.bossFootsteps;
+      }
+
+      if (footstepClip != null)
+      {
+        // Use the clip's length as cooldown if it's longer than the default
+        float cooldown = Mathf.Max(footstepCooldown, footstepClip.length);
+        if (Time.time - lastFootstepTime >= cooldown)
+        {
+          audioManager.PlaySFX(footstepClip);
+          lastFootstepTime = Time.time;
+        }
+      }
+    }
   }
 
   void ModeAnim()
@@ -136,20 +177,28 @@ public class Heroin : MonoBehaviour
 
   public void Jump()
   {
-    bool powerDoubleJump = doubleJump.isDoubleJump; 
+    bool powerDoubleJump = doubleJump.isDoubleJump;
 
     if (isGroundCheck)
     {
       ApplyForceJump();
+      if (audioManager != null && audioManager.jump != null)
+      {
+        audioManager.PlaySFX(audioManager.jump);
+      }
       if (powerDoubleJump)
       {
-        canDoubleJump = true;  
+        canDoubleJump = true;
       }
     }
     else if (canDoubleJump)
     {
       ApplyForceJump();
-      canDoubleJump = false; 
+      if (audioManager != null && audioManager.jump != null)
+      {
+        audioManager.PlaySFX(audioManager.jump);
+      }
+      canDoubleJump = false;
     }
   }
 

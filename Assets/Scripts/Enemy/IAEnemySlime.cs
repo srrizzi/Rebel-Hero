@@ -12,13 +12,6 @@ public class IAEnemySlime : MonoBehaviour
   private bool movingRight = true;
   private Rigidbody2D rb;
 
-  //AudioManager audioManager;
-
-  //private void Awake()
-  //{
-  //  audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
-  //}
-
   void Start()
   {
     initialPosition = transform.position;
@@ -39,6 +32,8 @@ public class IAEnemySlime : MonoBehaviour
       // Persegue o jogador no eixo X
       Vector2 direction = new Vector2(player.position.x - transform.position.x, 0).normalized;
       transform.position += (Vector3)(direction * moveSpeed * Time.deltaTime);
+
+      // Toca o som do slime quando o player está no range
 
     }
     else
@@ -69,6 +64,9 @@ public class IAEnemySlime : MonoBehaviour
   bool IsWithinPatrolLimits(Vector2 targetPosition)
   {
     float relativeX = targetPosition.x - initialPosition.x;
+
+
+
     return relativeX >= -patrolDistance && relativeX <= patrolDistance;
   }
 }

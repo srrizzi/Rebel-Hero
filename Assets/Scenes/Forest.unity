@@ -14266,7 +14266,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -63626,9 +63626,9 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -64280,6 +64280,7 @@ MonoBehaviour:
   kBCount: 0
   kBTime: 0.2
   isKnockRight: 0
+  footstepCooldown: 0.4
 --- !u!70 &1174736901
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
