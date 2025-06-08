@@ -15,8 +15,68 @@ MonoBehaviour:
   m_TableCollectionName: Tabla1
   m_TableCollectionNameGuidString: f914b80e56e07e948a9f33e99849d136
   m_Entries:
-  - m_Id: 2965732605919232
-    m_Key: ButtonPlay
+  - m_Id: 1
+    m_Key: A001
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Key: A002
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Key: A003
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4
+    m_Key: A004
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5
+    m_Key: A005
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6
+    m_Key: A006
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5958519710384128
+    m_Key: New Entry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7
+    m_Key: A007
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5958519710384129
+    m_Key: New Entry 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8
+    m_Key: A008
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5958519710384130
+    m_Key: New Entry 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9
+    m_Key: A009
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10
+    m_Key: A010
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11
+    m_Key: A011
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5958519710384131
+    m_Key: New Entry 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12
+    m_Key: A012
     m_Metadata:
       m_Items: []
   m_Metadata:

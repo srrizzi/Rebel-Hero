@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoubleJump : MonoBehaviour
 {
@@ -14,7 +15,11 @@ public class DoubleJump : MonoBehaviour
     if (collision.CompareTag("Player"))
     {
       PowerUpBlue();
-      audioManager.PlaySFX(audioManager.powerUpBlue);
+
+      if (SceneManager.GetActiveScene().name != "Cave" && SceneManager.GetActiveScene().name != "Boss")
+      {
+        audioManager.PlaySFX(audioManager.powerUpBlue);
+      }
     }
   }
 

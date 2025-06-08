@@ -17,7 +17,66 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: f914b80e56e07e948a9f33e99849d136, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 1
+    m_Localized: Jogar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Localized: Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Localized: Sobre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4
+    m_Localized: Opcoes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5
+    m_Localized: Creditos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6
+    m_Localized: Sair
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7
+    m_Localized: Voltar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8
+    m_Localized: "Em um mundo subterr\xE2neo mergulhado em trevas e segredos esquecidos,
+      voc\xEA \xE9 Agatha, uma hero\xEDna sem mem\xF3ria, guiada apenas por ecos
+      de um passado destru\xEDdo. Rebel Hero \xE9 um jogo de a\xE7\xE3o e explora\xE7\xE3o
+      no estilo Metroidvania, que combina combate intenso, narrativa profunda e uma
+      jornada de autodescoberta. Explore as profundezas de um abismo antigo, onde
+      dois povos travaram uma guerra silenciosa por gera\xE7\xF5es: os Altianos,
+      guardi\xF5es da luz interior, e os Valoriaos, dominadores que aprisionaram
+      as almas dos Altianos para criar ex\xE9rcitos de sombras. Desperta sem lembran\xE7as,
+      Agatha descobre ser a chave para a liberta\xE7\xE3o desses esp\xEDritos perdidos
+      \u2014 e a \xFAnica esperan\xE7a de revolta contra a tirania. \xC0 medida que
+      avan\xE7a pelos labirintos do mundo esquecido, ela reconquista fragmentos de
+      mem\xF3ria e poder, revelando uma verdade que pode mudar tudo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9
+    m_Localized: Geral
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10
+    m_Localized: Musica
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11
+    m_Localized: Efeitos Sonoros
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12
+    m_Localized: Salvar
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

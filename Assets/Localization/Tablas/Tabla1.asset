@@ -30,7 +30,7 @@ MonoBehaviour:
         - rid: 5302294187021959457
         - rid: 5302294187021959458
         - rid: 5302294187021959459
-        m_ConnectedFile: 
+        m_ConnectedFile: Assets/Localization/TabelExcel/Translate.csv
     - rid: 5302294187021959457
       type: {class: KeyIdColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
       data:
@@ -46,7 +46,7 @@ MonoBehaviour:
           m_Code: en-US
         m_FieldName: English (United States)(en-US)
         m_CommentFieldName: English (United States)(en-US) Comments
-        m_IncludeComments: 1
+        m_IncludeComments: 0
     - rid: 5302294187021959459
       type: {class: LocaleColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
       data:
@@ -54,4 +54,4 @@ MonoBehaviour:
           m_Code: pt-BR
         m_FieldName: Portuguese (Brazil)(pt-BR)
         m_CommentFieldName: Portuguese (Brazil)(pt-BR) Comments
-        m_IncludeComments: 1
+        m_IncludeComments: 0

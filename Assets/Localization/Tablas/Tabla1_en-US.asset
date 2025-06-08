@@ -17,7 +17,65 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: f914b80e56e07e948a9f33e99849d136, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 1
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Localized: Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Localized: About
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4
+    m_Localized: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6
+    m_Localized: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7
+    m_Localized: Return
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8
+    m_Localized: "In an underground world shrouded in darkness and forgotten secrets,
+      you are Agatha \u2014 a heroine with no memory, guided only by echoes of a
+      shattered past. Rebel Hero is a Metroidvania-style action and exploration game
+      that blends intense combat, deep narrative, and a journey of self-discovery.
+      Explore the depths of an ancient abyss, where two peoples have waged a silent
+      war for generations: the Altianos, guardians of inner light, and the Valoriaos,
+      dominators who imprisoned the souls of the Altianos to forge armies of shadow.
+      Awakened without memories, Agatha discovers she is the key to freeing these
+      lost spirits \u2014 and the only hope for a revolt against tyranny. As she
+      progresses through the labyrinths of the forgotten world, she reclaims fragments
+      of memory and power, unveiling a truth that could change everything."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9
+    m_Localized: Master
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10
+    m_Localized: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11
+    m_Localized: Sound FX
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12
+    m_Localized: Save
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

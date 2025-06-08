@@ -9,10 +9,6 @@ public class Heroin : MonoBehaviour
   public float radiusDetected;
   public MoveDiretion moveDiretion;
 
-  DialogueSystem dialogueSystem;
-
-  [SerializeField] private Transform npc;
-
   [SerializeField] public Animator anim;
 
   [SerializeField] private Transform detectedGround;
@@ -46,7 +42,6 @@ public class Heroin : MonoBehaviour
 
   private void Awake()
   {
-    dialogueSystem = Object.FindFirstObjectByType<DialogueSystem>();
     audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
   }
 
@@ -111,17 +106,6 @@ public class Heroin : MonoBehaviour
     else if (!isDirectingRight && inputDirection > 0)
     {
       Flip();
-    }
-
-    if (Mathf.Abs(transform.position.x - npc.position.x) < 2.0f)
-    {
-      if (Mathf.Abs(transform.position.x - npc.position.x) > 2.0f) return;
-
-      if (Input.GetKeyDown(KeyCode.E))
-      {
-        audioManager.PlaySFX(audioManager.npcTalk);
-        dialogueSystem.Next();
-      }
     }
   }
 

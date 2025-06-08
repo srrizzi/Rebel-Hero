@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AttackDestroy : MonoBehaviour
 {
@@ -14,7 +15,11 @@ public class AttackDestroy : MonoBehaviour
     if (collision.CompareTag("Player"))
     {
       PowerUpRed();
-      audioManager.PlaySFX(audioManager.powerUpRed);
+
+      if (SceneManager.GetActiveScene().name != "Cave" && SceneManager.GetActiveScene().name != "Boss")
+      {
+        audioManager.PlaySFX(audioManager.powerUpRed);
+      }
     }
   }
 
